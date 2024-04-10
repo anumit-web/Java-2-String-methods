@@ -48,10 +48,16 @@ public class JavaCode2 {
         String city1 = "Lindon";
         System.out.println("Lindon string equals = " + city1.equals("Lindon"));
 
+        // String split
         String lord_of_the_rings_best_quote = "One ring to rule them all, one ring to find them, one ring to bring them all and in the darkness bind them.";
-
+        String quotes_array[] = lord_of_the_rings_best_quote.split(" ");
+        System.out.println("String split result. Array length = " + quotes_array.length);
         
-
+        // String join
+        // String array to single string
+        String castle_parts[] = {"Flag", "wall", "keep", "Gate"};
+        String castle_information = String.join(",", castle_parts);
+        System.out.println("String array to single string = " + castle_information);
 
     }
     
